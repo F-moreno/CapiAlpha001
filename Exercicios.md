@@ -26,3 +26,9 @@ while True:
     percentual = 100/numero
     break
 </code></pre>
+
+<!--Python-->
+
+```py
+print('Hello, world!')
+```
