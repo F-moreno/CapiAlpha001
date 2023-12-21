@@ -29,7 +29,7 @@
 >    percentual = 100/numero
 >    break
 >```
->```2- Utilizando try-except, crie um sistema que realize a busca de um valor em uma lista:
+>2- Utilizando try-except, crie um sistema que realize a busca de um valor em uma lista:
 >
 >a-) Caso a lista esteja vazia lance uma exceção ListaVazia.
 >b-) Caso nao exista o valor na lista lance uma exceção ValueNaoEncontrado.
@@ -37,25 +37,24 @@
 >d-) Encontrando o valor, caso ele seja zero ou menor lance uma exceção ValorNulo.
 >e-) Caso não haja exceções imprima esta informação.
 >f-) Independente de existir exceção escreve o valou que foi buscado.
-```
-## Classes
 
->```1- Identifique possiveis caracteristicas e ações para os seguinte objetos:
+## Classes
+>1- Identifique possiveis caracteristicas e ações para os seguinte objetos:
 >
->a-)Triângulo
->b-)Quadrado
->c-)Poligono
->d-)Circulo
->e-)Cilindro
->f-)Veículo
->g-)Carro
->h-)Moto
->i-)Biclicleta
+>- Triângulo.
+>- Quadrado.
+>- Poligono.
+>- Circulo.
+>- Cilindro.
+>- Veículo.
+>- Carro.
+>- Moto.
+>- Biclicleta.
 >
 >2- Codifique cada uma das classes identificadas no exercicio 1.
 >
 >3- Analise o código, e responda a seguir:
->```
+>
 >```py
 >class Copo:
 >    def __init__(self):
