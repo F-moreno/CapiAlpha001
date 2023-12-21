@@ -5,11 +5,11 @@
 1- altere os seguinte algoritmos com um bloco try-except para tratar os devidos erros, modo que os sistemas a seguir possam ser executados sem "quebrar".
 
 a-)ValueError
-<pre><code>'''py
+<pre><code>```py
 while True:
     numero = int(input("Insira um valor inteiro:"))
     break
-'''</code></pre>
+```</code></pre>
 
 b-)ValueError / ZeroDivisionError
 <pre><code>
