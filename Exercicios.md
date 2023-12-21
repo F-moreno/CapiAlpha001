@@ -79,8 +79,10 @@
 >    def beber(self):
 >        self.copo.capacidade = "Vazio"
 >```
->
->
+>- Crie um objeto copo, em seguida crie um objeto barman e festeiro passando o copo criado como parametro.
+>- Solicite a impressão do copo (```py print(copo)```), Requisite a função ```encherCopo()``` e em seguida solicite novamente a impressão do copo. Analise e reflita sobre o que aconteceu.
+>- Agora requisite a função ```py beber()``` do objeto festeiro e após solicite novamente a impressão do copo. Algo similiar aconteceu, Analise e reflita sobre o ocorrido.
+>- Reflita, porque isso acontece?
 >
 
 crie uma classe carro e uma classe motorista
