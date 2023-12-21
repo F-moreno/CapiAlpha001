@@ -13,7 +13,7 @@
 >
 >```
 >
->__b-)__ValueError / ZeroDivisionError
+>b-)ValueError / ZeroDivisionError
 >
 >```py
 >while True:
@@ -38,3 +38,50 @@
 >e-) Caso não haja exceções imprima esta informação.
 >f-) Independente de existir exceção escreve o valou que foi buscado.
 
+## Classes
+>1- Identifique possiveis caracteristicas e ações para os seguinte objetos:
+>
+>a-)Triângulo
+>b-)Quadrado
+>c-)Poligono
+>d-)Circulo
+>e-)Cilindro
+>f-)Veículo
+>g-)Carro
+>h-)Moto
+>i-)Biclicleta
+>
+>2- Codifique cada uma das classes identificadas no exercicio 1.
+>
+>3- Analise o código, e responda a seguir:
+>
+>```py
+>class Copo:
+>    def __init__(self):
+>        self.capacidade = "Vazio"
+>
+>    def __str__(self):
+>        return f"O copo esta {self.capacidade}."
+>
+>
+>class Barman:
+>    def __init__(self, copo: Copo):
+>        self.copo = copo
+>
+>    def encherCopo(self):
+>        self.copo.capacidade = "Cheio"
+>
+>
+>class Festeiro:
+>    def __init__(self, copo: Copo):
+>        self.copo = copo
+>
+>    def beber(self):
+>        self.copo.capacidade = "Vazio"
+>```
+>
+>
+>
+
+crie uma classe carro e uma classe motorista
+o motorista deve alterar os atributos do carro como acelerar e freiar
