@@ -1,21 +1,21 @@
 # Exercicios
 ### Try-Except
->1- Altere os seguinte algoritmos com um bloco try-except para tratar os devidos erros, modo que os sistemas a seguir possam ser executados sem "quebrar".
+>1- Altere os seguinte algoritmos com um bloco try-except para tratar os devidos erros, de modo que os sistemas a seguir possam ser executados sem "quebrar".
 >
->a-)ValueError
+>- ValueError
 >```py
 >while True:
 >    numero = int(input("Insira um valor inteiro:"))
 >    break
 >```
->b-)ValueError / ZeroDivisionError
+>- ValueError / ZeroDivisionError
 >```py
 >while True:
 >    numero = int(input("Insira um valor inteiro:"))
 >    percentual = 100/numero
 >    break
 >```
->c-)ValueError / ZeroDivisionError
+>- ValueError / ZeroDivisionError
 >```py
 >while True:
 >    numero = int(input("Insira um valor inteiro:"))
@@ -23,7 +23,7 @@
 >    break
 >```
 >---
->2- Os seguinte error apareceram no meu terminal, identifique cada um deles e descreva um exemplo para eles tenham ocorrido:
+>2- Os seguinte error apareceram no meu terminal, identifique cada um deles e descreva um exemplo para que eles tenham ocorrido:
 >
 >```
 >---------------------------------------------------------------------------
@@ -50,6 +50,32 @@
 >
 >TypeError: can only concatenate str (not "float") to str
 >```
+>
+>3- Utilizando try-except, crie um sistema que realize a busca de um valor em uma lista:
+>
+>- Caso a lista esteja vazia lance uma exceção ListaVazia.
+>- Caso nao exista o valor na lista lance uma exceção ValorNaoEncontrado.
+>- Encontrando o valor, caso ele seja impar lance uma exceção ValorImpar.
+>- Encontrando o valor, caso ele seja zero ou menor lance uma exceção ValorNulo.
+>- Caso não haja exceções imprima esta informação.
+>- Independente de existir exceção escreve o valou que foi buscado.
+>---
+### Classes
+>1- Identifique possiveis caracteristicas e ações para os seguinte objetos:
+>
+>- Triângulo.
+>- Quadrado.
+>- Poligono.
+>- Circulo.
+>- Cilindro.
+>- Veículo.
+>- Carro.
+>- Moto.
+>- Biclicleta.
+>---
+>2- Codifique cada uma das classes identificadas no exercicio 1.
+>
+>---
 >---
 >3- Crie as classes a seguir:
 >- Carro.
@@ -89,32 +115,7 @@
 >- Realizar testes de hipótese
 >```
 >---
->4- Utilizando try-except, crie um sistema que realize a busca de um valor em uma lista:
->
->- Caso a lista esteja vazia lance uma exceção ListaVazia.
->- Caso nao exista o valor na lista lance uma exceção ValueNaoEncontrado.
->- Encontrando o valor, caso ele seja impar lance uma exceção ValorImpar.
->- Encontrando o valor, caso ele seja zero ou menor lance uma exceção ValorNulo.
->- Caso não haja exceções imprima esta informação.
->- Independente de existir exceção escreve o valou que foi buscado.
->---
-### Classes
->1- Identifique possiveis caracteristicas e ações para os seguinte objetos:
->
->- Triângulo.
->- Quadrado.
->- Poligono.
->- Circulo.
->- Cilindro.
->- Veículo.
->- Carro.
->- Moto.
->- Biclicleta.
->---
->2- Codifique cada uma das classes identificadas no exercicio 1.
->
->---
->3- Analise o código, realize os testes propostos e responda a seguir:
+>4- Analise o código, realize os testes propostos e responda a seguir:
 >```py
 >class Copo:
 >    def __init__(self):
@@ -142,7 +143,7 @@
 >- Agora requisite a função ```beber()``` do objeto festeiro e após solicite novamente a impressão do copo. Algo similiar aconteceu, Analise e reflita sobre o ocorrido.
 >- Reflita, porque isso acontece?
 >---
->3- Crie uma classe carro e uma classe motorista o motorista deve alterar os atributos do carro como acelerar e freiar.
+>5- Crie uma classe carro e uma classe motorista o motorista deve alterar os atributos do carro como acelerar e freiar.
 >
 >---
 ### Iterator
