@@ -171,33 +171,64 @@ while True:
 
 - Cilindro:
     Atributos:
+        raio da base
+        altura
+        Apótema
 
     Métodos:
-
+        superficie lateral
+        superficie total
+        volume
+        inclinação
 
 - Veículo:
     Atributos:
+        roda
+        pneu
+        porta
+        espelhos
+        motor
+        ...
 
     Métodos:
+        acelerar
+        frenar
+        virar à direita
+        virar à esquera
 
 
 - Carro:
     Atributos:
-
+        atributos veiculo
     Métodos:
+        metodos veiculos
+        estacionar
+        fazer drifting
+        ...
 
 
 - Moto:
     Atributos:
+        atributos veiculo
+        
 
     Métodos:
-
+        metodos veiculos
+        dar grau
+        dar babalu
 
 - Bicicleta:
     Atributos:
+        camara de ar
+        aro
+        coroa
+        corrente
+        catraca
+        celin 
+        quadro
 
     Métodos:
-
+        metodos moto
 
 """
 

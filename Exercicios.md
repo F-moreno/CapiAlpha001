@@ -1,4 +1,5 @@
 # Exercicios
+###
 ### Try-Except
 >1- Altere os seguinte algoritmos com um bloco try-except para tratar os devidos erros, de modo que os sistemas a seguir possam ser executados sem "quebrar".
 >
@@ -146,8 +147,58 @@
 >5- Crie uma classe carro e uma classe motorista o motorista deve alterar os atributos do carro como acelerar e freiar.
 >
 >---
+>6- Análize o seguinte codigo para uma livraria e responda o que segue, nela existem 3 classes que se comunicam entre si.
+>
+>Classe Livro:
+>~~~py
+>class Livro:
+>    def __init__(self, titulo, autor, ano) -> None:
+>        self.titulo = titulo
+>        self.autor = autor
+>        self.ano = ano
+>
+>~~~
+>Classe Biblioteca:
+>~~~py
+>class Biblioteca:
+>    def __init__(self) -> None:
+>        self.livros = set()
+>        self.index = 0
+>
+>    def adicionarLivro(self, livro: Livro) -> None:
+>        self.livros.add(livro)
+>
+>    def emprestarLivro(self) -> Livro:
+>        return self.livros.pop()
+>
+>    def devolverLivro(self, livro: Livro) -> Livro:
+>        return self.adicionarLivro(livro)
+>~~~
+>Classe Leitor
+>~~~py
+>class Leitor:
+>    def __init__(self):
+>        self.livro = None
+>
+>    def pegarlivro(self, biblioteca: Biblioteca) -> None:
+>        if self.livro == None:
+>            self.livro = biblioteca.emprestarLivro()
+>        else:
+>            print(f"Atualmente possuo um livro, e é o máximo que consigo ler por vez.")
+>
+>    def devolverLivro(self, biblioteca: Biblioteca) -> None:
+>        if self.livro == None:
+>            print("Não possuo livros para devolver.")
+>        else:
+>            biblioteca.devolverLivro(self.livro)
+>            self.livro = None
+>~~~
+>- Adicione um metodo a cada uma delas de modo que possibilite uma chamada de print() agradavel de modo que:
+>>- Objetos Livro devem informar suas caracteristicas, titulo autor e ano;
+>>- Objetos Biblioteca devem informar quantos livros possuem no momento, bem como informar que está vazia quando ocorrer;
+>>- Objetos Leitor devem informar quail livro está lendo no momento, e que não possui um se for o caso. 
 ### Iterator
->1- Conserte o seguinte programa em Python para que a classe.
+>1- Altere o codigo do exercicio 6 da lista de Classes para que a classe biblioteca possa ser iterada q apresentar seus livros quando solicitado.
 >
 >---
 ### Herança
