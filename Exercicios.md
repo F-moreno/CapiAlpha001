@@ -193,7 +193,7 @@
 >            biblioteca.devolverLivro(self.livro)
 >            self.livro = None
 >~~~
->- Adicione um metodo a cada uma delas de modo que possibilite uma chamada de print() agradavel de modo que:
+>- Adicione um metodo a cada uma delas de modo que possibilite uma chamada de ```print()``` agradavel de modo que:
 >>- Objetos Livro devem informar suas caracteristicas, titulo autor e ano;
 >>- Objetos Biblioteca devem informar quantos livros possuem no momento, bem como informar que está vazia quando ocorrer;
 >>- Objetos Leitor devem informar quail livro está lendo no momento, e que não possui um se for o caso. 
