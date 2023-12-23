@@ -207,6 +207,36 @@ while True:
         hélice
     Metodos:
         Voar()
+- Veículo:
+    Atributos:
+        capacidade
+
+    Métodos:
+        transportar()
+        acelerar()
+        frear()
+        vira a esquerda()
+        vira a direita()
+
+-Terrestre: Veiculo
+    Atributos:
+        Roda
+    
+    metodos:
+        Andar na estrada()
+
+-Aquatico: Veiculo
+    Atributo:
+        Popa
+        Proa
+    Metodos:
+        Navegar()
+
+-Aéreo: Veiculo
+    Atributos:
+        hélice
+    Metodos:
+        Voar()
 
 -Aviao: Aereo, Terrestre
 
@@ -310,16 +340,79 @@ class Circulo:
 
 CILINDRO
 
+class Cilindro:
+    def __init__(self, raio, altura, pi = 3.141592) -> None:
+        self.raio = raio
+        self.altura = altura
+        self.pi = pi
+
+    def calcular_volume(self):
+        volume = self.pi * self.raio**2 * self.altura
+        return volume
+
+    def calcular_area_superficial(self):
+        area_base = self.pi * self.raio**2
+        area_lateral = 2 * self.pi * self.raio * self.altura
+        area_total = 2 * area_base + area_lateral
+        return area_total
+
+VEICULO
+
+class Veiculo:
+    def __init__(self, capacidade, velocidade) -> None:
+        self.capacidade = capacidade
+        self.velocidade = velocidade
+
+    def transportar(self):
+        _embarcar = int(input("Digite quantos passageiros vao embarcar: "))
+        if _embarcar > self.capacidade:
+            _excedente = _embarcar - self.capacidade
+            print(f"Capacidade insuficiente, {_excedente} ficarão de fora.")
+        else:
+            print(f"{_embarcar} embarcados.")
+
+    def acelerar(self, aceleracao):
+        self.velocidade += aceleracao
+        print(f"Velocidade aumentada em {aceleracao}km/h.")
+        print(f"Velocidade atual: {self.velocidade + aceleracao}km/h.")
+
+    def freia(self, frenagem):
+        self.velocidade -= frenagem
+        print(f"Velocidade reduzida em {frenagem}km/h.")
+        print(f"Velocidade atual: {self.velocidade - frenagem}km/h.")
+
+    def vira_esquerda(self):
+        print("Veiculo virou à esquerda.")
+
+    def vira_direita(self):
+        print("Veiculo virou à direita.")
+
+
+class Terrestre(Veiculo):
+    def __init__(self, capacidade, velocidade, rodas) -> None:
+        super().__init__(capacidade, velocidade)
+        self.rodas = rodas
+
+    def andar_na_estrada(self):
+        print("Veículo terrestre está andando na estrada.")
+
+
+class Aquatico(Veiculo):
+    def __init__(self, popa, proa, *args, **kwargs) -> None:
+        super().__init__(*args, *kwargs)
+        self.popa = popa
+        self.proa = proa
+
+    def navegar(self):
+        print("Veículo aquático está navegando.")
+
+
+class Aereo(Veiculo):
+    def __init__(self, helice, *args, **kwargs) -> None:
+        super().__init__(*args, **kwargs)
+        self.helice = helice
+
+    def voar(self):
+        print("Veículo aéreo está voando.")
 
 """
-# - Cilindro:
-#     Atributos:
-#         raio da base
-#         altura
-#         Apótema
-
-#     Métodos:
-#         superficie lateral
-#         superficie total
-#         volume
-#         inclinação
