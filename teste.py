@@ -179,37 +179,57 @@ while True:
 
 - Veículo:
     Atributos:
-        roda
-        pneu
-        porta
-        espelhos
-        motor
-        ...
+        capacidade
 
     Métodos:
-        acelerar
-        frenar
-        virar à direita
-        virar à esquera
+        transportar()
+        acelerar()
+        frear()
+        vira a esquerda()
+        vira a direita()
 
-
-- Carro:
+-Terrestre: Veiculo
     Atributos:
-        atributos veiculo
+        Roda
+    
+    metodos:
+        Andar na estrada()
+
+-Aquatico: Veiculo
+    Atributo:
+        Popa
+        Proa
+    Metodos:
+        Navegar()
+
+-Aéreo: Veiculo
+    Atributos:
+        hélice
+    Metodos:
+        Voar()
+
+-Aviao: Aereo, Terrestre
+
+- Carro: Terrestre
+    Atributos:
+        motor
+        chassi
+        placa
     Métodos:
         metodos veiculos
         estacionar
         fazer drifting
         ...
 
+-Carro Hibrido: Terrestre, Aquatico
 
-- Moto:
+- Moto: Terrestre
     Atributos:
-        atributos veiculo
-        
+        motor
+        chassi
+        placa
 
     Métodos:
-        metodos veiculos
         dar grau
         dar babalu
 
