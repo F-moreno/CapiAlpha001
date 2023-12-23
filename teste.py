@@ -294,11 +294,32 @@ class Poligono:
         return perimetro
 
 CIRCULO 
+
+class Circulo:
+    def __init__(self, raio, pi = 3.141592) -> None:
+        self.pi = pi
+        self.raio = raio
+
+    def calcular_area(self):
+        area = self.pi * self.raio**2
+        return area
+
+    def calcular_perimetro(self):
+        perimetro = 2 * self.pi * self.raio
+        return perimetro
+
+CILINDRO
+
+
 """
-
-
-# - Poligono:
+# - Cilindro:
 #     Atributos:
-#         lado
+#         raio da base
+#         altura
+#         Apótema
+
 #     Métodos:
-#         perimetro do poligono
+#         superficie lateral
+#         superficie total
+#         volume
+#         inclinação
