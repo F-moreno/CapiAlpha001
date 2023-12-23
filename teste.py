@@ -121,23 +121,20 @@ while True:
 -Triangulo:
     Atributos:
 
-        tama
-        nho dos lados
+        lado
+        base
         altura
         angulo
 
     Metodo:
-        área
-        hipotenusa
-        soma_AI
+        area
+        pitagoras
 
 - Quadrado:
     Atributos:
 
-        ângulo reto
-        diagonais iguais
-        simetrias
-        relação trigonométrica
+        base
+        altura
     Métodos:
 
         area
@@ -147,13 +144,12 @@ while True:
     Atributos:
         
         lado
-        angulo interno
-        vertice
+        
 
     Métodos:
 
         perimetro do poligono
-        area de um poligono
+
         
 
 - Circulo:
@@ -231,15 +227,58 @@ while True:
         metodos moto
 
 """
+"""
+CLASSES Q2 - TRIANGULO
+
+class Triangulo:
+    def __init__(self, lado, base, altura, angulo) -> None:
+        self.lado = lado
+        self.base = base
+        self.altura = altura
+        self.angulo = angulo
+
+    def calcular_area(self):
+        area = (self.base * self.altura) / 2
+        return area
+
+    def TeoremaDePitagoras(self):
+        if self.angulo == 90:
+            c = (self.lado**2 - self.base**2) ** 1 / 2
+            return c
+        else:
+            print("Calculo válido apenas para triângulos retangulos.")
+
+            
+QUADRADO:
+
+class Quadrado:
+    def __init__(self, base, altura) -> None:
+        self.base = base
+        self.altura = altura
+
+    def calcular_area(self):
+        area = self.base * self.altura
+        return area
+    def calcula_perimetro(self):
+        perimetro = self.base *2 + self.altura *2
+        return perimetro
+
+POLIGONO
+
+class Poligono:
+    def __init__(self, lados) -> None:
+        self.lados = lados
+    
+    def calcula_perimetro(self):
+        perimetro = sum(self.lados)
+        return perimetro
+
+CIRCULO 
+"""
 
 
-# class Triangulo:
-#     def __init__(self, area, pitagoras, somaAngulosInternos) -> None:
-#         self.area = area
-#         self.pitagoras = pitagoras
-#         self.somaAngulosInternos = somaAngulosInternos
-# class Triangulo:
-#     def __init__(self, area, pitagoras, somaAngulosInternos) -> None:
-#         self.area = area
-#         self.pitagoras = pitagoras
-#         self.somaAngulosInternos = somaAngulosInternos
+# - Poligono:
+#     Atributos:
+#         lado
+#     Métodos:
+#         perimetro do poligono
