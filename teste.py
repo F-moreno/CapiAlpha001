@@ -16,8 +16,7 @@ while True:
         break
     except ValueError as e:
         print(f"Erro: {e}")
-"""
-"""
+
 1 - b)
 
 while True:
@@ -39,9 +38,7 @@ while True:
    numero = int(input("Insira um valor inteiro:")) # numero = 0
    percentual = 100/numero
    break
-"""
 
-"""
 2 - b)
 
 # import numpy as np
@@ -49,9 +46,7 @@ while True:
 # np.mean(mean)
 
 mean * 3
-"""
 
-"""
 2 - c)
 
 "mean: " + 1.0
@@ -94,10 +89,6 @@ while True:
         if i <= 0:
             raise NullValueError("Valor menor ou igual à 0.")
 
-        else:
-            print("show papai")
-            break
-
     except EmptyListError as e:
         print(f"Erro: {e}")
 
@@ -112,7 +103,11 @@ while True:
 
     except Exception:
         print("Fernando mama no cano")
-
+    
+    else:
+            print("show papai")
+            break
+            
     finally:
         print("Finally executado.")
 """
@@ -120,7 +115,6 @@ while True:
 """
 -Triangulo:
     Atributos:
-
         lado
         base
         altura
@@ -281,7 +275,7 @@ while True:
 CLASSES Q2 - TRIANGULO
 
 class Triangulo:
-    def __init__(self, lado, base, altura, angulo) -> None:
+    def __init__(self, lado:int, base:int, altura:int, angulo:float) -> None:
         self.lado = lado
         self.base = base
         self.altura = altura
@@ -297,7 +291,8 @@ class Triangulo:
             return c
         else:
             print("Calculo válido apenas para triângulos retangulos.")
-
+   
+   
             
 QUADRADO:
 
@@ -356,10 +351,13 @@ class Cilindro:
         area_total = 2 * area_base + area_lateral
         return area_total
 
+    def __str__(self):
+        return "teu cu"
+
 VEICULO
 
 class Veiculo:
-    def __init__(self, capacidade, velocidade) -> None:
+    def __init__(self, capacidade, velocidade:int = 0) -> None:
         self.capacidade = capacidade
         self.velocidade = velocidade
 
@@ -379,7 +377,7 @@ class Veiculo:
     def freia(self, frenagem):
         self.velocidade -= frenagem
         print(f"Velocidade reduzida em {frenagem}km/h.")
-        print(f"Velocidade atual: {self.velocidade - frenagem}km/h.")
+        print(f"Velocidade atual: {self.velocidade}km/h.")
 
     def vira_esquerda(self):
         print("Veiculo virou à esquerda.")
@@ -416,3 +414,46 @@ class Aereo(Veiculo):
         print("Veículo aéreo está voando.")
 
 """
+
+
+class Carro:
+    def __init__(self, marca, modelo, ano, placa, opcionais=[]) -> None:
+        self.marca = marca
+        self.modelo = modelo
+        self.ano = ano
+        self.placa = placa
+        self.opcionais = opcionais
+        self.ligado = False
+        self.velocidade = 0
+
+    def __str__(self) -> str:
+        print(f"Este é o {self.modelo}, da {self.marca}")
+
+    def ligar(self):
+        if not self.carro:
+            self.ligado = True
+            print("Carro funcionando")
+        else:
+            print("Carro já está ligado")
+
+    def desligar(self):
+        if self.ligado and self.velocidade == 0:
+            self.ligado = False
+            print("Carro desligado")
+        elif self.velocidade >= 10:
+            print("Não é possivel desligar o carro em movimento")
+        else:
+            print("Carro ja está desligado")
+
+    def acelerar(self):
+        if self.ligado:
+            self.velocidade += 10
+            print(f"Velocidade aumentada para {self.velocidade} km/h")
+
+    def frear(self):
+        if self.velocidade >= 10 and self.ligado:
+            self.velocidade -= 10
+            print(f"velocidade reduzida para {self.velocidade}")
+
+    def liga_radio(self):
+        print("Radio em funcionamento")

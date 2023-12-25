@@ -93,6 +93,12 @@
 >- Acelerar
 >- Frear
 >- Ligar rádio
+>
+>Obs.:
+>Quando solicitado print de um carro, o carro deve apresentar sua marca e modelo
+>O carro deve guardar o estado "ligado" ou "desligado";
+>Um carro "desligado" não pode acelerar;
+>Um carro parado não pode freiar;
 >```
 >- Distribuição Normal
 >```
