@@ -416,7 +416,7 @@ class Aereo(Veiculo):
 """
 
 
-class Carro:
+"""class Carro:
     def __init__(self, marca, modelo, ano, placa, opcionais=[]) -> None:
         self.marca = marca
         self.modelo = modelo
@@ -457,3 +457,99 @@ class Carro:
 
     def liga_radio(self):
         print("Radio em funcionamento")
+"""
+
+"""
+class Copo:
+    def __init__(self):
+        self.capacidade = "Vazio"
+
+    def __str__(self):
+        return f"o copo esta {self.capacidade}."
+
+
+class Barman:
+    def __init__(self):
+        self.bebidas = 2
+
+    def encherCopo(self, copo: Copo):
+        if copo.capacidade == "Cheio":
+            print("Seu copo ta cheio nengue ta maruco?")
+
+        elif self.bebidas:
+            copo.capacidade = "Cheio"
+            self.bebidas -= 1
+        else:
+            pass
+
+
+class Festeiro:
+    def __init__(self, copo: Copo):
+        self.copo = copo
+
+    def beber(self):
+        self.copo.capacidade = "Vazio"
+
+    def comprar_birita(self, barman: Barman):
+        barman.encherCopo(self.copo)
+
+    def __str__(self):
+        return f"{self.copo}."
+
+
+Crie um objeto Copo, Barman e Festeiro.
+Drink = Barman()
+Pinga = Barman()
+Refrigerante = Barman()
+
+Marcotti = Festeiro(Copo())
+Samir = Festeiro(Copo())
+Deivid = Festeiro(Copo())
+
+print(f"Marcotti {Marcotti}\n" + f"Samir {Samir}\n" + f"Deivid {Deivid}")
+
+Marcotti.comprar_birita(Drink)
+Marcotti.comprar_birita(Drink)
+Samir.comprar_birita(Drink)
+Deivid.comprar_birita(Drink)
+
+print(f"Marcotti {Marcotti}\n" + f"Samir {Samir}\n" + f"Deivid {Deivid}")
+
+Solicite a impressão do copo (print(copo)), 
+Requisite a função encherCopo() e em seguida solicite novamente a impressão do copo. 
+Analise e reflita sobre o que aconteceu."""
+"""
+Agora requisite a função beber() do objeto festeiro e após solicite novamente a impressão do copo. 
+Algo similiar aconteceu, Analise e reflita sobre o ocorrido.
+Reflita, porque isso acontece?"""
+
+
+class Caixa:
+    def __init__(self) -> None:
+        self.ticket = 0
+
+    def __str__(self) -> str:
+        return f"Aqui um exemplo de função str. {self.ticket}"
+
+    def __iter__(self) -> int:
+        return self
+
+    def __next__(self) -> int:
+        if self.ticket < 10:
+            atual, self.ticket = self.ticket, self.ticket + 1
+            return atual
+        else:
+            raise StopIteration
+
+
+contador = Caixa()
+
+for i in contador:  # i = [0,1,2,3,4,5,6,7,8,9] ; next(contador) = 10
+    print(i)
+
+# variavel_qualquer = next(contador)
+# print(contador)
+# variavel_qualquer2 = next(contador)
+# print(contador)
+# variavel_qualquer3 = next(contador)
+# print(contador)

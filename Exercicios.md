@@ -105,10 +105,11 @@
 > Atributos:
 >- Média
 >- Variância
+>- Desvio Padrão
 > Métodos:
->- Calcular fdp
->- Gerar amostra
->- Calcular função de distribuição acumulada
+>- Calcular fdp(valor)
+>- Gerar amostra(tamanho_amostra)
+>- Calcular função de distribuição acumulada(valor)
 >```
 >- Regressão Linear
 >```
