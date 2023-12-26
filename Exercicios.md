@@ -1,5 +1,5 @@
 # Exercicios
-###
+
 ### Try-Except
 >1- Altere os seguinte algoritmos com um bloco try-except para tratar os devidos erros, de modo que os sistemas a seguir possam ser executados sem "quebrar".
 >
@@ -205,7 +205,20 @@
 >>- Objetos Biblioteca devem informar quantos livros possuem no momento, bem como informar que está vazia quando ocorrer;
 >>- Objetos Leitor devem informar quail livro está lendo no momento, e que não possui um se for o caso. 
 ### Iterator
+>
 >1- Altere o codigo do exercicio 6 da lista de Classes para que a classe biblioteca possa ser iterada q apresentar seus livros quando solicitado.
+>
+>2-
+>
+>- Parte 1
+>
+> Crie um sistema para uma casa lotérica, no qual haja uma classe ```ImpressoraTicket``` responsável por imprimir fichas. Além disso, implemente outra classe chamada ```Chamada``` que, com base na quantidade de fichas impressas, realiza chamadas sequenciais. Estabeleça uma comunicação eficaz entre essas classes.
+>
+>É importante destacar que a ```ImpressoraTicket``` deve ser capaz de emitir dois tipos de tickets: um normal e um preferencial. Da mesma forma, a classe ```Chamada``` deve ter o conhecimento de que, a cada duas fichas normais emitidas, é necessário realizar a chamada de uma ficha preferencial.
+>
+>-Parte 2
+>
+>Note que pode exixtir mais de um "caixa" chamando as senhas, faça isso.
 >
 >---
 ### Herança
@@ -248,3 +261,6 @@
 > Métodos:
 >- Pedalar
 >```
+
+
+U Can do it bro, I belive in u!
