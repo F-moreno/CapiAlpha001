@@ -16,3 +16,48 @@ Entenderemos como trabalhar com iteradores em Python. Exploraremos a implementa�
 Abordaremos o conceito de herança, permitindo que uma classe herde características e comportamentos de outra. Isso promove a reutilização de código e a criação de hierarquias de classes mais eficientes.
 
 ## Estrutura do Projeto
+~~~
+|-- CapiAlpha001/
+    |-- Exercicios.md
+    |-- src
+        |-- area51.py
+        |-- excecoes.py
+        |-- classes_oop.py
+        |-- iteradores.py
+        |-- heranca.py
+    |-- LICENSE
+    |-- README.md
+~~~
+
+## Instruções de Uso
+
+Clone o repositório para sua máquina local:
+
+```bash
+git clone https://github.com/F-moreno/CapiAlpha001.git
+```
+
+Navegue até o diretório do projeto:
+
+```bash
+cd CapiAlpha001
+```
+Aqui você poderá encontrar todos os execicios propostos em ```exercicios.md```.
+Explore os arquivos no diretório ```src/``` para entender os conceitos abordados em cada tópico.
+
+Execute os scripts para ver alguma possiveis soluções:
+
+```bash
+python src/excecoes.py
+python src/classes_oop.py
+python src/iteradores.py
+```
+
+Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para propor melhorias, adicionar novos tópicos ou esclarecer dúvidas. Abra uma ```issue``` ou envie um ```pull request```.
+
+Esperamos que este projeto seja útil para o seu aprendizado em Python. Boa jornada de estudos! 
+
+U can do it! I push iron in u🚀
+
+Ass.: SVLTCEM
