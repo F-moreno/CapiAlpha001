@@ -523,7 +523,7 @@ Agora requisite a função beber() do objeto festeiro e após solicite novamente
 Algo similiar aconteceu, Analise e reflita sobre o ocorrido.
 Reflita, porque isso acontece?"""
 
-
+"""
 class Caixa:
     def __init__(self) -> None:
         self.ticket = 0
@@ -544,7 +544,7 @@ class Caixa:
 
 contador = Caixa()
 
-for i in contador:  # i = [0,1,2,3,4,5,6,7,8,9] ; next(contador) = 10
+for i in contador:  # i = [0,1,2,3,4,5,6,7,8,9] ; next(contador) = i+1
     print(i)
 
 # variavel_qualquer = next(contador)
@@ -553,3 +553,26 @@ for i in contador:  # i = [0,1,2,3,4,5,6,7,8,9] ; next(contador) = 10
 # print(contador)
 # variavel_qualquer3 = next(contador)
 # print(contador)
+
+"""
+
+
+class ImpressoraTicket:
+    def __init__(self, fichas) -> None:
+        self.fichas = fichas
+
+    def ficha_normal(self):
+        return self.ficha
+
+    def ficha_preferencial(self):
+        pass
+
+
+# class Chamada:
+#     def __init__(self) -> None:
+
+sistemaTicket = ImpressoraTicket()
+usuario1 = next(sistemaTicket.ficha_normal())
+usuario2 = next(sistemaTicket.ficha_normal())
+usuario3 = next(sistemaTicket.ficha_normal())
+usuario4 = next(sistemaTicket.ficha_normal())

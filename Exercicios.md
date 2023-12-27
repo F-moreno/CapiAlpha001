@@ -216,7 +216,7 @@
 >
 >É importante destacar que a ```ImpressoraTicket``` deve ser capaz de emitir dois tipos de tickets: um normal e um preferencial. Da mesma forma, a classe ```Chamada``` deve ter o conhecimento de que, a cada duas fichas normais emitidas, é necessário realizar a chamada de uma ficha preferencial.
 >
->-Parte 2
+>- Parte 2
 >
 >Note que pode exixtir mais de um "caixa" chamando as senhas, faça isso.
 >
