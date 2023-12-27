@@ -58,6 +58,3 @@ Contribuições são bem-vindas! Sinta-se à vontade para propor melhorias, adic
 
 Esperamos que este projeto seja útil para o seu aprendizado em Python. Boa jornada de estudos! 
 
-U can do it! I push iron in u🚀
-
-Ass.: SVLTCEM

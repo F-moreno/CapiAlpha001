@@ -270,6 +270,4 @@
 >```
 
 
-U can do it! I put iron in u🚀
 
-Ass.: SVLTCEM
