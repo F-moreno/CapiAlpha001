@@ -557,22 +557,22 @@ for i in contador:  # i = [0,1,2,3,4,5,6,7,8,9] ; next(contador) = i+1
 """
 
 
-class ImpressoraTicket:
-    def __init__(self, fichas) -> None:
-        self.fichas = fichas
+# class ImpressoraTicket:
+#     def __init__(self, fichas) -> None:
+#         self.fichas = fichas
 
-    def ficha_normal(self):
-        return self.ficha
+#     def ficha_normal(self):
+#         return self.ficha
 
-    def ficha_preferencial(self):
-        pass
+#     def ficha_preferencial(self):
+#         pass
 
 
-# class Chamada:
-#     def __init__(self) -> None:
+# # class Chamada:
+# #     def __init__(self) -> None:
 
-sistemaTicket = ImpressoraTicket()
-usuario1 = next(sistemaTicket.ficha_normal())
-usuario2 = next(sistemaTicket.ficha_normal())
-usuario3 = next(sistemaTicket.ficha_normal())
-usuario4 = next(sistemaTicket.ficha_normal())
+# sistemaTicket = ImpressoraTicket()
+# usuario1 = next(sistemaTicket.ficha_normal())
+# usuario2 = next(sistemaTicket.ficha_normal())
+# usuario3 = next(sistemaTicket.ficha_normal())
+# usuario4 = next(sistemaTicket.ficha_normal())

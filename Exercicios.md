@@ -208,8 +208,15 @@
 >
 >1- Altere o codigo do exercicio 6 da lista de Classes para que a classe biblioteca possa ser iterada q apresentar seus livros quando solicitado.
 >
->2-
+>2- crie uma classe lista de compras que itere sobre os itens quando necessario:
+>lista contem uma lista de compras a ser iterasa
 >
+>3- crie uma classe jogadores que itere sobre os itens quando necessario:
+>jogadores contem uma lista de jogadores a ser terado
+>
+>
+>4-
+> 
 >- Parte 1
 >
 > Crie um sistema para uma casa lotérica, no qual haja uma classe ```ImpressoraTicket``` responsável por imprimir fichas. Além disso, implemente outra classe chamada ```Chamada``` que, com base na quantidade de fichas impressas, realiza chamadas sequenciais. Estabeleça uma comunicação eficaz entre essas classes.
@@ -263,4 +270,6 @@
 >```
 
 
-U Can do it bro, I belive in u!
+U can do it! I put iron in u🚀
+
+Ass.: SVLTCEM
