@@ -576,3 +576,110 @@ for i in contador:  # i = [0,1,2,3,4,5,6,7,8,9] ; next(contador) = i+1
 # usuario2 = next(sistemaTicket.ficha_normal())
 # usuario3 = next(sistemaTicket.ficha_normal())
 # usuario4 = next(sistemaTicket.ficha_normal())
+
+
+"""
+Teu cu
+"""
+
+
+# class Lista_de_compras:
+#     def __init__(self, lista=[]) -> None:
+#         self.lista = lista
+#         self.index = 0
+
+#     def __iter__(self):
+#         return self
+
+#     def __next__(self):
+#         if self.index < len(self.lista):
+#             atual = self.lista[self.index]
+#             self.index += 1
+#             return atual
+#         else:
+#             raise StopIteration
+
+
+# comprar = Lista_de_compras(
+#     [
+#         "fruta01",
+#         "fruta02",
+#         "fruta03",
+#         "fruta04",
+#         "fruta05",
+#     ]
+# )
+
+# for i in comprar:
+#     print(i)
+
+
+# class Jogadores:
+#     def __init__(self, jogadores=[]) -> None:
+#         self.jogadores = jogadores
+#         self.index = 0
+
+#     def __iter__(self):
+#         return self
+
+#     def __next__(self):
+#         if self.index < len(self.jogadores):
+#             atual, self.index = self.index, self.index + 1
+#             return atual
+
+#         else:
+#             raise StopIteration
+
+
+class Atleta:
+    def __init__(self, peso=float, aposentado=False) -> None:
+        self.aposentado = aposentado
+        self.peso = peso
+
+    def aposentar(self) -> str:
+        aposentado = True
+        return f"Aposentado = {aposentado}"
+
+    def aquecer(self) -> str:
+        self.peso -= 0.5
+        return f"O usuário está aquecendo. peso atual: {self.peso}"
+
+
+class Corredor(Atleta):
+    def __init__(self, peso, aposentado=False) -> None:
+        super().__init__(peso, aposentado)
+
+    def correr(self) -> str:
+        return "Corrida iniciada"
+
+
+class Nadador(Atleta):
+    def __init__(self, peso, aposentado=False) -> None:
+        super().__init__(peso, aposentado)
+
+    def nadar(self) -> str:
+        return "Natação iniciada"
+
+
+class Ciclista(Atleta):
+    def __init__(self, peso, aposentado=False) -> None:
+        super().__init__(peso, aposentado)
+
+    def pedalar(self) -> str:
+        return "Pedal iniciado"
+
+
+class TriAtleta(Corredor, Nadador, Ciclista):
+    def __init__(self, peso, aposentado=False) -> None:
+        super().__init__(peso, aposentado)
+
+
+triatleta = TriAtleta(peso=70)
+print(triatleta.aquecer())
+print(triatleta.correr())
+print(triatleta.nadar())
+print(triatleta.pedalar())
+print(triatleta.aposentar())
+
+# Terminei. Vou atrás de comida tbm kdfjakfj
+# raleu mofi.

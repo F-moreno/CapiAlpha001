@@ -16,7 +16,7 @@
 >    percentual = 100/numero
 >    break
 >```
->- ValueError / ZeroDivisionError
+>- Exception
 >```py
 >while True:
 >    numero = int(input("Insira um valor inteiro:"))
